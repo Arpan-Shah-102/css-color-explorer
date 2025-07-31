@@ -313,7 +313,7 @@ header p {
 
 /* Crossed out state: whole container becomes very transparent */
 .color-item.crossed-out {
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .color-button {
@@ -364,6 +364,7 @@ header p {
     text-decoration: line-through;
     text-decoration-thickness: 2px;
     text-decoration-color: #ff4757;
+    opacity: 0.5
 }
 
 .color-name.crossed-out::before {
@@ -497,6 +498,7 @@ header p {
     
     .color-name.crossed-out {
         font-size: 11px;
+        opacity: 0.5;
     }
     
     .control-group {
@@ -543,6 +545,7 @@ header p {
     
     .color-name.crossed-out {
         font-size: 10px;
+        opacity: 0.5;
     }
 }
 
