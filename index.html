@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color Names Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS Color Names Explorer</h1>
+            <p>Click any color button to change the background. Check the box to mark colors as used!</p>
+        </header>
 
+        <div class="background-controls">
+            <h3>Example Buttons Background Mode:</h3>
+            <div class="control-group">
+                <label class="radio-option">
+                    <input type="radio" name="background-mode" value="white" checked>
+                    <span class="radio-custom"></span>
+                    White Background
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="background-mode" value="black">
+                    <span class="radio-custom"></span>
+                    Black Background
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="background-mode" value="opposite">
+                    <span class="radio-custom"></span>
+                    Opposite Color
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="background-mode" value="custom">
+                    <span class="radio-custom"></span>
+                    Custom Color
+                </label>
+            </div>
+            <div class="custom-color-container" id="customColorContainer" style="display: none;">
+                <input type="color" id="customColorPicker" value="#ffffff">
+                <span>Pick your custom background color</span>
+            </div>
+        </div>
+
+        <div class="example-section" id="exampleSection">
+            <h2>Example Buttons</h2>
+            <div class="button-group">
+                <button class="btn primary" id="primaryBtn">Primary Button</button>
+                <button class="btn secondary" id="secondaryBtn">Secondary Button</button>
+                <button class="btn tertiary" id="tertiaryBtn">Tertiary Button</button>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for a color..." />
+        </div>
+
+        <div class="colors-grid" id="colorsGrid">
+            <!-- Colors will be dynamically generated here -->
+        </div>
+    </div>
+
+    <button id="resetButton">🔄 Reset All</button>
+
+    <!-- Tooltip element -->
+    <div id="tooltip" class="tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
