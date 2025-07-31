@@ -257,7 +257,6 @@ header p {
     background-color: transparent;
     color: grey;
     border-color: grey;
-    margin: 10px;
 }
 
 .tertiary:disabled {
